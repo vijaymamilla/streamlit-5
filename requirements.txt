@@ -8,7 +8,7 @@ pandas
 numpy
 tensorflow==2.15.0
 xgboost
-pickle
+
 plotly
 
 streamlit
