@@ -2,7 +2,7 @@ import os
 import pandas as pd 
 import numpy as np 
 import datetime
-import pickle 
+import joblib
 import streamlit as st
 import sklearn
 import plotly.express as px
@@ -61,7 +61,7 @@ def get_data(df, date):
 # load model
 def load_model(model_file):
     with open(model_file, 'rb') as file:
-        model = pickle.load(file)
+        model = joblib.load(file)
     return model 
 
 def get_prediction(model, data):
