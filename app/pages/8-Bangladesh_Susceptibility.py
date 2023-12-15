@@ -13,6 +13,7 @@ import geopandas as gpd
 import shapely.geometry
 #from shapely.ops import unary_union
 from branca.element import Template, MacroElement
+import os
 
 APP_TITLE = 'Bangladesh Flood Susceptibility'
 APP_SUB_TITLE = 'Zainab Akhtar'
