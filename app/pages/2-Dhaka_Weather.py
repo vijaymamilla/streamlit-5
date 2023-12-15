@@ -14,7 +14,8 @@ tf.keras.utils.set_random_seed(42)
 with open('app/theme.css') as f:
     css = f.read()
 
-st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+#st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+st.image("app/artifactory/dhaka.jpg", caption='Dhaka', use_column_width=True)
 
 def header():
     st.header("Dhaka Weather Forecasting")
