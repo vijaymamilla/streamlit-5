@@ -8,10 +8,9 @@ import streamlit as st
 import sklearn
 import plotly.express as px
 import plotly.graph_objs as go
-# from keras.models import load_model
 
-with open('app/theme.css') as f:
-    css = f.read()
+#with open('app/theme.css') as f:
+#    css = f.read()
     
 # Set up directories
 working_dir = os.path.dirname(os.path.realpath(__file__))
@@ -19,13 +18,13 @@ app_dir = os.path.dirname(working_dir)
 ARTIFACTORY_DIR = os.path.join(app_dir, 'artifactory')
 MODEL_FILE = os.path.join(ARTIFACTORY_DIR, 'final_xgboost_sylhet1.joblib')
 
-#image_path = os.path.join(ARTIFACTORY_DIR, 'Shah_Jalal_Mazar_at_Sylhet.jpeg')
+image_path = os.path.join(ARTIFACTORY_DIR, 'Shah_Jalal_Mazar_at_Sylhet.jpeg')
 
 st.header("Flood Guard - Bangladesh Sylhet Region")
 
 
-#st.image(image_path, caption='Shah Jalal Mazar', use_column_width=True)
-st.image(r"/mount/src/bangladesh-flood-guard/src/tasks/task-4-model-deployment/streamlit/app/artifactory/Shah_Jalal_Mazar_at_Sylhet.jpeg", caption='Shah Jalal Mazar', use_column_width=True)
+st.image(image_path, caption='Shah Jalal Mazar', use_column_width=True)
+#st.image(r"/mount/src/bangladesh-flood-guard/src/tasks/task-4-model-deployment/streamlit/app/artifactory/Shah_Jalal_Mazar_at_Sylhet.jpeg", caption='Shah Jalal Mazar', use_column_width=True)
 
 
 st.write("""

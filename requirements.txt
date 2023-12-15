@@ -1,14 +1,14 @@
+pickle
+bz2
 scikit-learn==1.3.0
 category_encoders
 joblib
-
 matplotlib
 pandas
 numpy
 tensorflow==2.15.0
 xgboost
 plotly
-
 streamlit
 streamlit-camera-input-live
 streamlit-card
