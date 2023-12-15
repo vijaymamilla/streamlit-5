@@ -19,7 +19,7 @@ with open('app/theme.css') as f:
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 st.title('Flood Prediction - Bangladesh 🇧🇩')
 
-#st.image("app/artifactory/Home.png", caption='', use_column_width=True)
+st.image("app/artifactory/Home.png", caption='', use_column_width=True)
 
 st.subheader('**FloodGuard: Integrating Rainfall Time Series and GIS Data for Flood Prediction and Waterbody Forecasting in Bangladesh**')
 
